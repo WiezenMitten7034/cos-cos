@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witaj Aleksandro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #FFD1DC; /* Pastelowy róż */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            animation: colorChange 8s infinite;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        p:last-child {
+            margin-bottom: 1rem;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button-container a {
+            font-size: 1.2rem;
+            color: #555;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #555;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+
+        .button-container a:hover {
+            color: #FFFFFF;
+            background-color: #555;
+            border-color: #333;
+        }
+
+        @keyframes colorChange {
+            0% { color: #FFFFFF; } /* Biały */
+            25% { color: #AAAAFF; } /* Pastelowy niebieski */
+            50% { color: #FFD700; } /* Pastelowy złoty */
+            75% { color: #333333; } /* Czarny */
+            100% { color: #FFFFFF; } /* Biały */
+        }
+    </style>
+</head>
+<body>
+    <h1>Witaj Aleksandro</h1>
+    <p>Jak się masz Olcia?</p>
+    <p>Wyspałaś się?</p>
+
+    <div class="button-container">
+        <a href="https://www.youtube.com/shorts/sJxDS1QInD0">Może kawusi?</a>
+        <a href="https://www.youtube.com/shorts/uC07IR3P_vI">Na rozbudzenie</a>
+    </div>
+</body>
+</html>
