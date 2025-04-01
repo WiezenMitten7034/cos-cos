@@ -1,82 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Witaj Aleksandro !!!</title>
+    <title>Dziennik Zamojski</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #FFD1DC; /* Pastelowy róż */
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
+        }
+        .header {
+            background: #333;
+            color: white;
+            padding: 15px;
             text-align: center;
-            position: relative;
+            font-size: 24px;
         }
-
-        h1 {
-            font-size: 3rem;
-            color: #333;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            animation: colorChange 8s infinite;
+        .nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
         }
-
-        p {
-            font-size: 1.5rem;
-            color: #555;
-            margin: 0.5rem 0;
-        }
-
-        p:last-child {
-            margin-bottom: 1rem;
-        }
-
-        .button-container {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .button-container a {
-            font-size: 1.2rem;
-            color: #555;
+        .nav a {
+            color: white;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 2px solid #555;
-            border-radius: 5px;
-            background-color: #FFFFFF;
-            transition: all 0.3s ease;
+            padding: 10px 20px;
+            display: inline-block;
         }
-
-        .button-container a:hover {
-            color: #FFFFFF;
-            background-color: #555;
-            border-color: #333;
+        .nav a:hover {
+            background: #555;
         }
-
-        @keyframes colorChange {
-            0% { color: #FFFFFF; } /* Biały */
-            25% { color: #AAAAFF; } /* Pastelowy niebieski */
-            50% { color: #FFD700; } /* Pastelowy złoty */
-            75% { color: #333333; } /* Czarny */
-            100% { color: #FFFFFF; } /* Biały */
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .article-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .article-content {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Witaj Aleksandro</h1>
-    <p>Jak się masz Olcia?</p>
-    <p>Wyspałaś się?</p>
-
-    <div class="button-container">
-        <a href="https://www.youtube.com/shorts/sJxDS1QInD0">Może kawusi?</a>
-        <a href="https://www.youtube.com/shorts/uC07IR3P_vI">Na rozbudzenie</a>
+    <div class="header">Dziennik Zamojski</div>
+    <div class="nav">
+        <a href="#">Strona Główna</a>
+        <a href="#">Wiadomości</a>
+        <a href="#">Sport</a>
+        <a href="#">Kontakt</a>
     </div>
+    <div class="container">
+        <div class="article-title">Młody Polak zainteresował Niemców</div>
+        <div class="article-content">
+            W ubiegłym tygodniu w powiecie Zamojskim w ZSP Im. Z. Klukowskiego w Szczebrzeszynie odbyła się międzynarodowa wymiana uczniowska pomiędzy gminą Creilsheim i Szczebrzeszyn. Wymiana miała na celu poznanie obu kultur i poznanie systemu nauczania w obu państwach.<br><br>
+            W całym tym zdarzeniu nie byłoby nic specjalnego, gdyby nie tłumacz - 20-letni chłopak ze Szczebrzeszyna, który zaimponował stronie niemieckiej swoją wysoką znajomością języka niemieckiego. Z tego też powodu otrzymał on zaproszenie do powiatu Creilsheim na odbycie szkolenia w kierunku certyfikatu językowego, który umożliwi bezproblemowe znalezienie pracy na rynku niemieckim i nadaje uprawnienia tłumacza 1 stopnia.<br><br>
+            Jak podaje starosta Zamojski, jest to ewenement i nigdy nie zdarzyło się, aby strona niemiecka była tak zainteresowana naszym uczniem.
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 Dziennik Zamojski - Wszelkie prawa zastrzeżone</div>
 </body>
 </html>
